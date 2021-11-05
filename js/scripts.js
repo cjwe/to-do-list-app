@@ -1,5 +1,6 @@
 
 function newItem(){
+
   // Add new item to list
   let li = $('<li></li>');
   let inputValue = $('#input').val();
@@ -10,6 +11,7 @@ function newItem(){
   } else {
     $('#list').append(li)
   }
+  
   // Cross out item from list
   function crossOut() {
     li.toggleClass("strike");
